@@ -23,7 +23,7 @@ var app = new Vue({
     }
   },
   created() {
-    fetch("dummy/pt-list.php")
+    fetch("https://raw.githubusercontent.com/prestonflamion/msis-triage-2020/app/public/dummy/pt-list.php")
     .then( response => response.json() )
     .then( json => {
       this.ptList = json;
